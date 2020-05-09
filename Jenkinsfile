@@ -1,5 +1,15 @@
 pipeline {
-	sh '''
-		echo 123456
-	'''
+	agent any
+
+    stages {
+    	stage('Ansible prerequisites') {
+	        steps {
+	            script {
+	            	sh '''
+	                	echo 11111
+                    '''
+	            }
+	        }
+	    }
+    }
 }
