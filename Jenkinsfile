@@ -1,1 +1,5 @@
-ls -a
+pipeline {
+	sh '''
+		echo 123456
+	'''
+}
